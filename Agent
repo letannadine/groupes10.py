@@ -7,4 +7,4 @@
         
         
      def_str_(self):
-        return self.nom, self.prenom, self.poste
+        retourne (self.nom, self.prenom, self.poste)
