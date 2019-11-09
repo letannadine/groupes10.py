@@ -8,3 +8,4 @@
         
      def_str_(self):
         retourne (self.nom, self.prenom, self.poste)
+Un séjour sans faille
