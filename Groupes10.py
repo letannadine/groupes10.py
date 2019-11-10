@@ -51,3 +51,72 @@ def depose(self):
     print ("quel montant ?")
     x=int(input("?"))
     c.depose(x)
+
+﻿#fait par ALBERT WEFE 18A179FS
+from Agent import Agent
+from Agent import Agent
+class Guichetier(Agent):
+	# définition de la méthode spéciale __init__
+  def __init__(self,nom="",solde=0,prenom="",poste=""):
+	"""Initialisation du compte avec la valeur soldeInitial."""
+      # assignation de l'attribut d'instance solde
+      Agent.__init__(self,nom)
+      self.solde = float(input("entre votre solde"))
+	self.montant = float(input("entre votre montant"))
+
+   def _get_montant(self):
+       
+ 	print("\t__Compte__\n\nVotre numéro de compte est : {0} \n".format(self._montant))
+   
+     return self._montant    
+   
+   def _get_solde(self):
+       
+ 	print("\t__Compte__\n\nVotre solde est de {0} FCFA \n".format(self._solde))
+   
+     return self._solde
+    
+
+   def _set_solde(self,new_solde):
+    
+    	print("\t__Compte__\n\nVotre nouveau solde est de {0} FCFA \n".format(new_solde))
+       
+	 self._solde = new_solde
+
+  def _set_montant(self,new_solde):
+    
+    	print("\t__Compte__\n\nVotre nouveau solde est de {0} FCFA \n".format(new_solde))
+       
+	 self._montant = new_montant    
+    
+ 	 # définition de la méthode NouveauSolde()
+   def NouveauSolde(self, montant):
+      """Nouveau solde de compte avec la valeur montant."""
+      self.solde = float(montant)
+
+	# définition de la méthode Solde()
+  def consultesolde (self):
+	"""Retourne le solde."""
+      return self.solde
+
+  def retire (self,montant):
+	"""retire le compte de la valeur montant. Retourne le solde."""
+     if self.solde ˂= self.montant:
+          print ("impossible de ce faire retraire")
+      else:
+        self.solde-=self.montant
+      return self.solde
+  def versement (self, montant):
+	"""versement le compte de la valeur montant. Retourne le solde."""
+     self.solde+=montant
+     print("Nouveau solde : {:+.2f} €".format(self.solde))
+     return self.solde
+
+  def virement (self,comptc):
+	"""le virement le compte de la valeur montant."""
+    self.retire(self,montant)
+    comptc.versement(self,montant)
+
+  def operation(self):
+      self.versement(self,montant)
+      self.retire(self,montant)
