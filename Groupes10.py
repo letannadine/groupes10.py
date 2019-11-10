@@ -1,6 +1,5 @@
-#coding:utf-8class 
-
-Agent:
+#coding:utf-8
+class Agent:
      def__init __ (self, nom, prenom, poste):
         self.nom=""
         self.prenom=""
@@ -120,3 +119,15 @@ class Guichetier(Agent):
   def operation(self):
       self.versement(self,montant)
       self.retire(self,montant)
+
+class controleur(Agent):
+	def __init__(self, nom, prenom ,solde,montant):
+		Agent.__init__(self, nom, prenom)
+		solde.verifications_montants()
+		ifi(solde = montant)
+print(" le montant du transactions jornalieres correspondant a la solde est :")
+print(" affiche OK")
+print(" sinom")
+print(" affiche NON")
+
+
