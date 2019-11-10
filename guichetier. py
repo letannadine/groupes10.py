@@ -9,6 +9,7 @@ class Guichetier(Agent):
       Agent.__init__(self,nom)
       self.solde = float(input("entre votre solde"))
 	self.montant = float(input("entre votre montant"))
+
    def _get_montant(self):
        
  	print("\t__Compte__\n\nVotre numéro de compte est : {0} \n".format(self._montant))
