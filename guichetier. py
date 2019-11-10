@@ -42,7 +42,7 @@ class Guichetier(Agent):
 	# définition de la méthode Solde()
   def consultesolde (self):
 	"""Retourne le solde."""
-      return self.soldesolde
+      return self.solde
 
   def retire (self,montant):
 	"""retire le compte de la valeur montant. Retourne le solde."""
