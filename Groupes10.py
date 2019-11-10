@@ -4,6 +4,8 @@ class Agent:
         self.nom=""
         self.prenom=""
         self.poste=""
+        self.email=""
+        self.tel=""
         
         
      def_str_(self):
@@ -129,5 +131,16 @@ print(" le montant du transactions jornalieres correspondant a la solde est :")
 print(" affiche OK")
 print(" sinom")
 print(" affiche NON")
+
+class Gestionnaires(Agent):
+    def __init__(self,nom,tel,email):
+        self.nom= nom
+        self.tel= tel
+        self.email= email
+        return "gestionnaire{0},nimero telephone{1},compte email{2}".format(self.nom,self.tel,self.email)
+        gestionnaire=gestionnaire("Mamat haman",+1055000000,wourden@email.com)
+        Banque.__init__(self,nom,email)
+        self.tel=tel
+        
 
 
