@@ -46,10 +46,11 @@ class Guichetier(Agent):
 
   def retire (self,montant):
 	"""retire le compte de la valeur montant. Retourne le solde."""
-     self.solde -= montant
-     print("Nouveau solde : {:+.2f} €".format(self.solde))
-     return self.solde
-
+     if self.solde ˂= self.montant:
+          print ("impossible de ce faire retraire")
+      else:
+        self.solde-=self.montant
+      return self.solde
   def versement (self, montant):
 	"""versement le compte de la valeur montant. Retourne le solde."""
      self.solde+=montant
