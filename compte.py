@@ -1,10 +1,4 @@
-class Agent:
-    def __unit__(self,nom,prenom):
-        self.nom = "nom"
-        self.prenom = "prenom"
-        self.poste="poste"
-    def __str__(self):
-        return "{0} {1} {3}".format("nom,prenom,poste")
+import Agent
 class compte(Agent):
     def __unit__(self):
         self.nom = "nom"
