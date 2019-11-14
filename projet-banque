@@ -1,1 +1,6 @@
 
+"GestionClients:versementsimple{0},versementconfrére{1}".format(self.versermentSimple,self.versementConfrére)
+        GestionversementClients=GestionversementClients("")
+        Guichetieres.__init__(self,versementSimple)
+        self.versementConfrére=versementConfrére
+            
