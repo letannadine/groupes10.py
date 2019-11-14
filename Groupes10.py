@@ -141,7 +141,7 @@ class Gestionnaires(Agent):
         gestionnaire=gestionnaire("Mamat haman",+1055000000,wourden@email.com)
         Banque.__init__(self,nom,email)
         self.tel=tel
-	class GestionversementClients(Guichetieres):
+class GestionversementClients(Guichetieres):
       def __init__(self,versementSimple,versementConfrére):  
         self.versementSimple=versementSimple
         self.versementFrere=versementFrere
