@@ -160,4 +160,4 @@ class Gestionnaires(Agent):
 
 
 
-# liens vidéo pour classe gestionnaire(https://youtu.be/6aRCQuM8M6E
+# liens
